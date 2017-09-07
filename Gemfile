@@ -7,6 +7,10 @@ gem 'rails', '4.2.5'
 gem 'rails-i18n'
 # Manage Procfile-based applications http://ddollar.github.com/foreman
 gem 'foreman'
+# Translations for the devise gem
+gem 'devise-i18n'
+# Flexible authentication solution for Rails with Warden.
+gem 'devise'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets

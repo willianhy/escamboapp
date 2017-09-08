@@ -9,6 +9,10 @@ gem 'rails-i18n'
 gem 'foreman'
 # Translations for the devise gem
 gem 'devise-i18n'
+# Rails gem of the Bootstrap based admin theme SB Admin 2.
+gem 'bootstrap_sb_admin_base_v2'
+# The most popular front-end framework for developing responsive, mobile first projects on the web.
+gem 'rails-assets-bootstrap', '3.3.7', source: 'https://rails-assets.org'
 # Flexible authentication solution for Rails with Warden.
 gem 'devise'
 # Use sqlite3 as the database for Active Record
@@ -50,7 +54,8 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
+  # Generate Entity-Relationship Diagrams for Rails applications http://voormedia.github.io/rails-erd/
+  gem 'rails-erd'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end

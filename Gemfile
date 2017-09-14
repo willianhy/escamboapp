@@ -15,6 +15,8 @@ gem 'bootstrap_sb_admin_base_v2'
 gem 'rails-assets-bootstrap', '3.3.7', source: 'https://rails-assets.org'
 # Notifyjs
 gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
+# A library for generating fake data such as names, addresses, and phone numbers.
+gem 'faker'
 # Flexible authentication solution for Rails with Warden.
 gem 'devise'
 # Use sqlite3 as the database for Active Record

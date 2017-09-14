@@ -11,12 +11,16 @@ gem 'foreman'
 gem 'devise-i18n'
 # Rails gem of the Bootstrap based admin theme SB Admin 2.
 gem 'bootstrap_sb_admin_base_v2'
-# The most popular front-end framework for developing responsive, mobile first projects on the web.
-gem 'rails-assets-bootstrap', '3.3.7', source: 'https://rails-assets.org'
-# Notifyjs
-gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
-# A library for generating fake data such as names, addresses, and phone numbers.
-gem 'faker'
+
+source 'https://rails-assets.org' do
+  # The most popular front-end framework for developing responsive, mobile first projects on the web.
+  gem 'rails-assets-bootstrap', '3.3.7'
+  # Notifyjs
+  gem 'rails-assets-notifyjs'
+  # BootboxJS
+  gem 'rails-assets-bootbox'
+end
+
 # Flexible authentication solution for Rails with Warden.
 gem 'devise'
 # Use sqlite3 as the database for Active Record
@@ -62,5 +66,7 @@ group :development do
   gem 'rails-erd'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker'
 end
 

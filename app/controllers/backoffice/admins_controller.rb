@@ -40,7 +40,7 @@ class Backoffice::AdminsController < BackofficeController
   def destroy
     admin_email = @admin.email
     if @admin.destroy
-      redirect_to backoffice_admins_path, notice: "O administrador (#{admin_email}) foi exclu[ido com sucesso!"
+      redirect_to backoffice_admins_path, notice: "O administrador (#{admin_email}) foi excluído com sucesso!"
     else
       render :index
     end
@@ -53,6 +53,6 @@ class Backoffice::AdminsController < BackofficeController
     end
 
     def params_admin
-      params.require(:admin).permit(:email, :password, :password_confirmation)
+      params.require(:admin).permit(:name, :email, :password, :password_confirmation)
     end
 end

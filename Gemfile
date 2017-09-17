@@ -21,9 +21,10 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-bootbox'
 end
 
-
 # Help ActiveRecord::Enum feature to work fine with I18n and simple_form.
 gem 'enum_help'
+# Minimal authorization through OO design and pure Ruby classes
+gem 'pundit'
 # Flexible authentication solution for Rails with Warden.
 gem 'devise'
 # Use sqlite3 as the database for Active Record

@@ -1,5 +1,13 @@
 class Backoffice::SendMailController < ApplicationController
 
-  def index
+  def edit
+    @admin = Admin.find(params[:id])
+
+    respond_to do |format|
+      format.js
+    end
+  end
+
+  def create
   end
 end

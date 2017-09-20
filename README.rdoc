@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/willianhy/escamboapp.svg?branch=master)](https://travis-ci.org/willianhy/escamboapp)
+
 == README
 
 This README would normally document whatever steps are necessary to get the

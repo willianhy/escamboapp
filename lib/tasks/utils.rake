@@ -1,6 +1,23 @@
 require 'faker'
 
 namespace :utils do
+
+  desc "Development Setup"
+  task setup_dev: :environment do
+
+    puts "Executando o setup para desenvolvimento..."
+
+    puts "APAGANDO BD... #{%x(rake db:drop)}"
+    puts "CRIANDO BD... #{%x(rake db:create)}"
+    puts %x(rake db:migrate)
+    puts %x(rake db:seed)
+    puts %x(rake utils:generate_admins)
+    puts %x(rake utils:generate_members)
+    puts %x(rake utils:generate_ads)
+
+    puts "Setup completado com sucesso!"
+  end
+  #############################################################################
   desc "Cria Adminstradores Fake"
   task generate_admins: :environment do
 
@@ -35,7 +52,7 @@ namespace :utils do
   task generate_ads: :environment do
     puts "Cadastrando ANÚNCIOS..."
 
-    100.times do
+    10.times do
       Ad.create!(
         title: Faker::Lorem.sentence([2, 3, 4, 5].sample),
         description: LeroleroGenerator.paragraph(Random.rand(3)),

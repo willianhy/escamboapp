@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/willianhy/escamboapp.svg?branch=master)](https://travis-ci.org/willianhy/escamboapp)
 
-##READ ME
+## READ ME
 
 Things you may want to cover:
 

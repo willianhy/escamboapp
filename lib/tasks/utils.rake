@@ -4,7 +4,7 @@ namespace :utils do
   desc "Cria Adminstradores Fake"
   task generate_admins: :environment do
 
-    puts "Cadastrando Administradores"
+    puts "Cadastrando ADMINISTRADORES"
 
     10.times do
       Admin.create!(name: Faker::Name.name,
@@ -14,9 +14,23 @@ namespace :utils do
                     role: [0, 1].sample)
     end
 
-    puts "Administradores cadastrados com sucesso!"
+    puts "ADMINISTRADORES cadastrados com sucesso!"
   end
+  #############################################################################
+  desc "Cria Membros Fake"
+  task generate_members: :environment do
 
+    puts "Cadastrando MEMBROS"
+
+    100.times do
+      Member.create!(email: Faker::Internet.email,
+                     password: "123456",
+                     password_confirmation: "123456")
+    end
+
+    puts "MEMBROS cadastrados com sucesso!"
+  end
+  #############################################################################
   desc "Cria Anúncios Fake"
   task generate_ads: :environment do
     puts "Cadastrando ANÚNCIOS..."

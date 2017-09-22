@@ -1,28 +1,41 @@
 [![Build Status](https://travis-ci.org/willianhy/escamboapp.svg?branch=master)](https://travis-ci.org/willianhy/escamboapp)
 
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##READ ME
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.3.3
 
-* System dependencies
+* Rails version: 4.2.5
 
-* Configuration
+* System dependencies:
 
-* Database creation
+ImageMagick (https://www.imagemagick.org)
 
-* Database initialization
+```
+sudo apt-get update
+sudp apt-get install imagemagick
+```
 
-* How to run the test suite
+* Configuration:
 
-* Services (job queues, cache servers, search engines, etc.)
+* Database creation:
 
-* Deployment instructions
+```
+rake db:drop db:create db:migrate
+```
 
-* ...
+* Database initialization:
+
+```
+ rake db:seed
+```
+
+* How to run the test suite:
+
+* Services (job queues, cache servers, search engines, etc.):
+
+* Deployment instructions:
 
 
 Please feel free to use a different markup language if you do not plan to run

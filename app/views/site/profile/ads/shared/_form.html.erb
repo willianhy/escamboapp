@@ -10,6 +10,7 @@
   <% end %>
 
 <%= form_for([:site, :profile, @ad], html: {multipart: true }) do |f| %>
+
   <div class="row">
     <div class="col-xs-6">
       <div class="form-group">
@@ -34,6 +35,14 @@
         <div class="input-group-addon"><%=  @ad.price.currency.symbol %></div>
           <%= f.text_field :price, class: "form-control", placeholder: "Preço" %>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">
+      <div class="form-group">
+        <%= f.label :finish_date %>
+        <%= f.date_field :finish_date, class: "form-control" %>
       </div>
     </div>
   </div>

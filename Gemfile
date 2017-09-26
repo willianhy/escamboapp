@@ -15,10 +15,12 @@ gem 'bootstrap_sb_admin_base_v2'
 source 'https://rails-assets.org' do
   # The most popular front-end framework for developing responsive, mobile first projects on the web.
   gem 'rails-assets-bootstrap', '3.3.7'
-  # Notifyjs
-  gem 'rails-assets-notifyjs'
+  # Bootstrap Notify
+  gem 'rails-assets-bootstrap.growl'
   # BootboxJS
   gem 'rails-assets-bootbox'
+  # Animate css
+  gem 'rails-assets-animate.css'
 end
 
 # Help ActiveRecord::Enum feature to work fine with I18n and simple_form.

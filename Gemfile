@@ -29,6 +29,8 @@ gem 'pundit'
 gem 'money-rails'
 # Easy file attachment management for ActiveRecord https://thoughtbot.com/open-source
 gem 'paperclip', '~> 5.0.0'
+# jQuery UI for the Rails asset pipeline
+gem 'jquery-ui-rails'
 # Flexible authentication solution for Rails with Warden.
 gem 'devise'
 # Use sqlite3 as the database for Active Record

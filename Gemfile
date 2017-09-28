@@ -33,6 +33,8 @@ gem 'money-rails'
 gem 'paperclip', '~> 5.0.0'
 # jQuery UI for the Rails asset pipeline
 gem 'jquery-ui-rails'
+# The safe Markdown parser, reloaded.
+gem 'redcarpet'
 # Flexible authentication solution for Rails with Warden.
 gem 'devise'
 # Use sqlite3 as the database for Active Record

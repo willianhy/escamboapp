@@ -21,6 +21,10 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-bootbox'
   # Animate css
   gem 'rails-assets-animate.css'
+  # Bootstrap plugin for markdown editing
+  gem 'rails-assets-bootstrap-markdown'
+  # A markdown parser and compiler. Built for speed.
+  gem 'rails-assets-marked'
 end
 
 # Help ActiveRecord::Enum feature to work fine with I18n and simple_form.

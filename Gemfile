@@ -39,6 +39,8 @@ gem 'paperclip', '~> 5.0.0'
 gem 'jquery-ui-rails'
 # The safe Markdown parser, reloaded.
 gem 'redcarpet'
+# FriendlyId is the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord
+gem 'friendly_id'
 # Flexible authentication solution for Rails with Warden.
 gem 'devise'
 # Use sqlite3 as the database for Active Record

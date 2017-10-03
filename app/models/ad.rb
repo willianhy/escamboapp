@@ -1,5 +1,8 @@
 class Ad < ActiveRecord::Base
 
+  # Constants
+  QTT_PER_PAGE = 6
+
   # Callbacks
   before_save :md_to_html
 
@@ -11,14 +14,14 @@ class Ad < ActiveRecord::Base
   validates :title, :description_md, :description_short, :category, :picture, :finish_date, presence: true
   validates :price, numericality: { greater_than: 0 }
 
-  scope :descending_order, -> (quantity = 10, page = 1) {
-    limit(quantity).order(created_at: :desc).page(page).per(6)
+  scope :descending_order, -> (page) {
+    order(created_at: :desc).page(page).per(QTT_PER_PAGE)
   }
-  scope :search, -> (term, page = 1) {
-    where("lower(title) LIKE ?", "%#{term.downcase}%").page(page).per(6)
+  scope :search, -> (term) {
+    where("lower(title) LIKE ?", "%#{term.downcase}%").page(page).per(QTT_PER_PAGE)
   }
   scope :to_the, -> (member) { where(member: member) }
-  scope :by_category, ->(id) { where(category: id) }
+  scope :by_category, ->(id, page) { where(category: id).page(page).per(QTT_PER_PAGE) }
 
   # paperclip
   has_attached_file :picture, styles: { large: "800x300#", medium: "320x150#", thumb: "100x100>" }, default_url: "/images/:style/missing.png"

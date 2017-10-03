@@ -17,6 +17,13 @@ sudo apt-get update
 sudp apt-get install imagemagick
 ```
 
+Graphviz (www.graphviz.org) - somente em desenvolvimento
+
+```
+sudo apt-get update
+sudo apt-get install graphviz
+```
+
 * Configuration:
 
 * Database creation:

@@ -66,7 +66,7 @@ namespace :dev do
         )
     end
 
-    10.times do
+    100.times do
       Ad.create!(
         title: Faker::Lorem.sentence([2, 3, 4, 5].sample),
         description_md: markdown_fake,

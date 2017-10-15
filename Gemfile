@@ -100,5 +100,16 @@ group :development do
   gem 'lerolero_generator'
   # Catches mail and serves it through a dream. http://mailcatcher.me
   gem 'mailcatcher'
+  # Remote multi-server automation tool
+  gem 'capistrano', '~> 3.7'
+  # Bundler specific tasks for Capistrano v3
+  gem 'capistrano-bundler', '~> 1.2'
+  # Official Ruby on Rails specific tasks for Capistrano
+  gem 'capistrano-rails', '~> 1.2'
+end
+
+group :production do
+  # MySQL Adapter
+  gem 'mysql2'
 end
 

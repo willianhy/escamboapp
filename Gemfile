@@ -45,6 +45,8 @@ gem 'friendly_id'
 gem 'wiselinks'
 # A Ruby Gem that wraps the functionality of jQuery Raty library, and provides optional IMDB style rating.
 gem 'ratyrate';
+  # A library for generating fake data such as names, addresses, and phone numbers.
+gem 'faker'
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
 gem 'kaminari'
 # Translations for the kaminari gem
@@ -92,8 +94,6 @@ group :development do
   gem 'rails-erd'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  # A library for generating fake data such as names, addresses, and phone numbers.
-  gem 'faker'
   # Markdown Lorem Ipsum generator
   gem 'doctor_ipsum'
   # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.

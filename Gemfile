@@ -47,6 +47,10 @@ gem 'wiselinks'
 gem 'ratyrate';
   # A library for generating fake data such as names, addresses, and phone numbers.
 gem 'faker'
+  # Markdown Lorem Ipsum generator
+gem 'doctor_ipsum'
+  # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
+gem 'lerolero_generator'
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
 gem 'kaminari'
 # Translations for the kaminari gem
@@ -94,10 +98,6 @@ group :development do
   gem 'rails-erd'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  # Markdown Lorem Ipsum generator
-  gem 'doctor_ipsum'
-  # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
-  gem 'lerolero_generator'
   # Catches mail and serves it through a dream. http://mailcatcher.me
   gem 'mailcatcher'
   # Remote multi-server automation tool

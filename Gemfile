@@ -110,9 +110,11 @@ group :development do
 end
 
 group :production do
- # MySQL Adapter
+  # MySQL Adapter
   gem 'mysql2', '~> 0.3.18'
- # Use Unicorn as the app server
+  # Use Unicorn as the app server
   gem 'unicorn'
+  # Mailgun's Official Ruby Library
+  gem 'mailgun-ruby', '~>1.1.6'
 end
 

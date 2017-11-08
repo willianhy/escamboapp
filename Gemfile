@@ -67,6 +67,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+# Biblioteca de integração em Ruby
+gem 'pagseguro-oficial', '~> 2.5.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -107,6 +109,8 @@ group :development do
   gem 'capistrano-rvm'
   # Unicorn for Capistrano v3:
   gem 'capistrano3-unicorn'
+  # Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible.
+  gem 'rack-cors', :require => 'rack/cors'
 end
 
 group :production do

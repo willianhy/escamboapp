@@ -109,6 +109,8 @@ group :development do
   gem 'capistrano-rvm'
   # Unicorn for Capistrano v3:
   gem 'capistrano3-unicorn'
+  # Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible.
+  gem 'rack-cors', :require => 'rack/cors'
 end
 
 group :production do

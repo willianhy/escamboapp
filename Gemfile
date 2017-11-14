@@ -73,8 +73,10 @@ gem 'pagseguro-oficial', '~> 2.5.0'
 gem 'prawn-rails'
 # PDF generator (from HTML) plugin for Ruby on Rails
 gem 'wicked_pdf'
-
+# Helper used by wicked_pdf
 gem 'wkhtmltopdf-binary'
+# Create beautiful JavaScript charts with one line of Ruby
+gem 'chartkick'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

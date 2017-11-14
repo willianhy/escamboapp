@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EscamboApp</title>
+    <%= wicked_pdf_stylesheet_link_tag 'application' %>
+    <%= wicked_pdf_stylesheet_link_tag 'site' %>
+    <%= csrf_meta_tags %>
+
+  </head>
+
+  <body>
+    <div id="global-spin" class="loading" style="display: none;">Loading&#8230;</div>
+    <div class="container">
+      <div class="row">
+        <div id="home-detail" class="col-md-9">
+          <div class="row">
+              <%= yield %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%= wicked_pdf_javascript_include_tag 'application' %>
+    <%= wicked_pdf_javascript_include_tag 'site' %>
+
+  </body>
+</html>

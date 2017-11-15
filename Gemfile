@@ -77,6 +77,8 @@ gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 # Create beautiful JavaScript charts with one line of Ruby
 gem 'chartkick'
+# Intelligent search made easy with Rails and Elasticsearch
+gem 'searchkick'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

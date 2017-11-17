@@ -77,6 +77,8 @@ gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 # Create beautiful JavaScript charts with one line of Ruby
 gem 'chartkick'
+# Role management library with resource scoping
+gem 'rolify'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

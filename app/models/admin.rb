@@ -20,4 +20,10 @@ class Admin < ActiveRecord::Base
       role.name
     end
   end
+
+  def roles_descriptions
+    self.roles.collect do |role|
+      Role::OPTIONS[role.name.to_sym]
+    end
+  end
 end
